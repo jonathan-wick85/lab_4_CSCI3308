@@ -10,7 +10,7 @@
 			<div class="col-8">
 				<div class="jumbotron">
 				  <h1 class="display-4">Welcome to CU Boulder's Football Home Page!</h1>
-				  <p class="lead">If you are interested in learning about the best collegiate football team in the Rockies, then you've come to the right place.  
+				  <p class="lead">If you are interested in learning about the best collegiate football team in the Rockies, then you've come to the right place.
 									Here you'll find the scores for the latest football season and the most up-to-date stats on our football players.  To find out more information
 									about Ralphie and the Buff Football Team, head over <a href="https://cubuffs.com/" >here</a></p>
 					<hr>
@@ -53,9 +53,9 @@
 						<%
 						if (data) {
     					var buttons = '';
-						data.forEach(function(item){
+							data.forEach(function(item){
   		 				buttons += '<button type="submit" name="color_selection" class="btn btn-block" style="background-color:#' + item.hex_value + '" value="' + item.hex_value + '">';
-			 			if(item.name){
+			 				if(item.name){
 		       			buttons += item.name + '</button>';
 		     			}
 		    			else{
@@ -64,10 +64,11 @@
   	 					}); %>
   	 					<%- buttons %>
 						<% } %>
+
 				  </form>
 				</div>
 			</div>
 		</div>
 	</div>
-  
+
 <% include ../partials/footer %>
